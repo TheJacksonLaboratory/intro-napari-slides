@@ -23,8 +23,8 @@ execute:
 
 **Peter Sobolewski (he/him)**
 
-Systems Analyst, Imaging Applications
-
+Systems Analyst
+Imaging Applications & Machine Learning
 Research IT
 
 :::: {.columns style='display: flex'}
