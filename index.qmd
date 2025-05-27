@@ -18,7 +18,7 @@ execute:
 ---
 
 
-## 
+## napari
 
 ### Introduction to `napari`
 
@@ -58,7 +58,7 @@ Research IT
 
 ## What is napari?
 
-#### A Python library for n-dimensional image visualization, annotation, and analysis.
+A Python library for n-dimensional image visualization, annotation, and analysis.
 
 ```{python}
 #| echo: false
