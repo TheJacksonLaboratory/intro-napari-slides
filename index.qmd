@@ -17,7 +17,6 @@ execute:
   cache: true
 ---
 
----
 ## napari
 
 ## Introduction to `napari`
@@ -217,6 +216,12 @@ nbscreenshot(viewer, alt_text="Empty napari viewer")
 - Stored per Python env, reset using `napari --reset`
 :::
 
+## Plugins can be installed from within napari
+
+- plugins can be publically discoverable and have global reach via PyPI/conda-forge and [napari-hub.org](https://napari-hub.org)
+
+![](images/napari_plugin_UI.png){height="400" fig-alt="Screenshot of napari UI showing the plugin install/uninstall UI" fig-align="center"}
+
 ## napari layers
 
 - the napari visualization data model uses `layers`
@@ -366,14 +371,3 @@ Plugin developer guide: [https://napari.org/dev/plugins/index.html](https://napa
 ::: {.notes}
 over 350, you can also choose to contribute to existing plugins
 :::
-
-## Plugins can be installed from within napari
-
-- plugins can be publically discoverable and have global reach via PyPI and [napari-hub.org](https://napari-hub.org)
-
-![](images/napari_plugin_UI.png){height="400" fig-alt="Screenshot of napari UI showing the plugin install/uninstall UI" fig-align="center"}
-
-
-
-
----
