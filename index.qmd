@@ -20,7 +20,7 @@ execute:
 
 ## napari
 
-### Introduction to `napari`
+## Introduction to `napari`
 
 **Peter Sobolewski (he/him)**
 
