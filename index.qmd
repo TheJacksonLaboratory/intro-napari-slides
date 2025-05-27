@@ -17,7 +17,7 @@ execute:
   cache: true
 ---
 
-## napari
+##
 
 ## Introduction to `napari`
 
@@ -102,6 +102,8 @@ nbscreenshot(viewer, alt_text="A rotated 3D view of labeled blobs")
 #| output: false
 viewer.close()
 ```
+
+---
 
 ## What can napari be used for?
 
