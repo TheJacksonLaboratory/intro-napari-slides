@@ -17,7 +17,7 @@ execute:
   cache: true
 ---
 
-
+---
 ## napari
 
 ## Introduction to `napari`
@@ -54,7 +54,6 @@ Research IT
     - Image layers: visualization
     - Points, Shapes, Labels layers: annotation
     - Example workflow
-- extending napari
 
 ## What is napari?
 
@@ -97,7 +96,7 @@ if __name__ == '__main__':
 ```{python}
 #| echo: false
 from napari.utils import nbscreenshot
-nbscreenshot(viewer, alt_text="A rotated 3D view of labled blobs")
+nbscreenshot(viewer, alt_text="A rotated 3D view of labeled blobs")
 ```
 ```{python}
 #| echo: false
@@ -117,7 +116,7 @@ viewer.close()
 - started in 2018 by Loïc Royer (Chan Zuckerberg Biohub) and Juan Nunez-Iglesias (Monash University)
 - goal: fast n-dimensional image viewer for Python
 - named after [a settlement in Kiribati in the South Pacific, the approx. midpoint between San Francisco and Melbourne](https://en.wikipedia.org/wiki/Napari)
-- since then, the project has grown considerably, with >150 contributors and >400 plugins
+- since then, the project has grown considerably, with >150 contributors and >500 plugins
 
 ::: aside    
 For more backstory, [check out Juan's blog post](https://ilovesymposia.com/2019/10/24/introducing-napari-a-fast-n-dimensional-image-viewer-in-python/)—JAX is part of it!
@@ -141,7 +140,7 @@ For more backstory, [check out Juan's blog post](https://ilovesymposia.com/2019/
     - no parity between different layers/features (e.g. multiscale handling)
     - there can be bugs :beetle:
 - can run into GPU/memory limitations for some large-data workflows
-- Python packaging and dependencies
+- Python packaging and dependencies :grimacing:
 
 ## napari is an open-source, community developed project—anyone can contribute! 
 <br />
@@ -189,6 +188,11 @@ reporting problems is very valuable!
 ## napari viewer
 
 - native application you can launch from the terminal/command prompt using `napari` command or via the application programming interface (API), e.g. `viewer = napari.Viewer()`
+
+:::{.callout-tip}
+The [napari bundled application](https://napari.org/stable/tutorials/fundamentals/installation.html#install-as-a-bundled-app) is stand alone and can be launched from your OS GUI
+:::
+
 - this `viewer` consists of menus, a `canvas` used for display, and widgets with controls for interacting with what is displayed on the `canvas`
 
 ## napari viewer
@@ -245,7 +249,7 @@ nbscreenshot(viewer, alt_text="napari viewer with three layers: actin (red), WGA
 #| echo: false
 
 viewer.dims.ndisplay = 3
-
+viewer.camera.angles = (-40, 40, 140)
 nbscreenshot(viewer, alt_text="napari viewer with three layers: actin (red), WGA (green), nuclei (blue) displayed as a composite on the canvas in 3D.")
 ```
 
